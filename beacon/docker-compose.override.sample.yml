@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  mongodb:
+    environment:
+      - MONGO_INITDB_DATABASE=admin
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+
+  wildfly:
+    environment:
+      - mongodb.url=mongodb://beacon:beacon@mongodb:27017/beacon?authSource=admin

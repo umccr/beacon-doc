@@ -1,0 +1,32 @@
+[
+  {
+    "aligner": "bwa-0.7.8",
+    "analysisDate": "2021-04-23",
+    "biosampleId": "GIAB_TESTING_NA24631",
+    "id": "GIAB_TESTING_NA24631",
+    "individualId": "GIAB_TESTING_NA24631",
+    "pipelineName": "GATK Pipeline 4.2.3.0",
+    "runId": "GIAB_TESTING_NA24631",
+    "variantCaller": "GATK4.0"
+  },
+  {
+    "aligner": "bwa-0.7.8",
+    "analysisDate": "2021-04-23",
+    "biosampleId": "GIAB_TESTING_NA24694",
+    "id": "GIAB_TESTING_NA24694",
+    "individualId": "GIAB_TESTING_NA24694",
+    "pipelineName": "GATK Pipeline 4.2.3.0",
+    "runId": "GIAB_TESTING_NA24694",
+    "variantCaller": "GATK4.0"
+  },
+  {
+    "aligner": "bwa-0.7.8",
+    "analysisDate": "2021-04-23",
+    "biosampleId": "GIAB_TESTING_NA24695",
+    "id": "GIAB_TESTING_NA24695",
+    "individualId": "GIAB_TESTING_NA24695",
+    "pipelineName": "GATK Pipeline 4.2.3.0",
+    "runId": "GIAB_TESTING_NA24695",
+    "variantCaller": "GATK4.0"
+  }
+]

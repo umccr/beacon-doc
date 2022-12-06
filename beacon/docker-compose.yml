@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    hostname: mongodb
+    environment:
+      - MONGO_INITDB_DATABASE=admin
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    volumes:
+      - ./mongo/db:/data/db
+      - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./scratch:/scratch
+    networks:
+      - beacon-net1
+    ports:
+      - '27017-27019:27017-27019'
+
+  wildfly:
+    image: quay.io/wildfly/wildfly:26.1.2.Final-jdk11
+    container_name: wildfly
+    hostname: wildfly
+    ports:
+      - '8080:8080'
+      - '9990:9990'
+    environment:
+      - mongodb.url=mongodb://beacon:beacon@mongodb:27017/beacon?authSource=admin
+    depends_on:
+      - mongodb
+    restart: always
+    networks:
+      - beacon-net1
+
+networks:
+  beacon-net1:
+    driver: bridge
