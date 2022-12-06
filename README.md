@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/574717809.svg)](https://zenodo.org/badge/latestdoi/574717809)
+
+
 # UMCCR Beacon Doc
 
 Contains documentation and notes for UMCCR Beacon exploration and setup
