@@ -16,5 +16,5 @@ Very small; mock; test cohort dataset; originally prepared by EGA RI implementat
 ## Import
 
 ```
-sh import.sh
+bash import.sh
 ```

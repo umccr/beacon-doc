@@ -1,0 +1,8 @@
+# You may override variables.tf as follows
+
+aws_region = "us-east-1"
+base_domain = "umccr.org"
+app_domain = "beacon.umccr.org"
+instance_type = "t3.large"
+root_disk_size = 10
+data_disk_size = 150

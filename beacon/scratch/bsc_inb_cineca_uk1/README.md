@@ -22,8 +22,10 @@ Quote:
 
 First, download the data. Typically, this should be executed on the host VM.
 
+> Tip: Download may take a while. You might want to run it in `screen` or `tmux` session! 
+
 ```
-sh download.sh
+bash download.sh
 ```
 
 After download completed, they should have the following checksum. If not, upstream might have updated the dataset.

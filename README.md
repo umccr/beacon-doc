@@ -24,9 +24,25 @@ Enhancing Australia's capability for secure and responsible sharing of human gen
 
 ## Demo
 
-Our Java Beacon demo instance is available at https://faro.demo.umccr.org
+Our Java Beacon demo instance is available at https://faro.demo.umccr.org/beacon/
 
-Please note that this is for testing only. We may change the service without notice.
+_Please note that this is for testing only. We may change the service without notice._
+
+### Example Query
+
+```
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/info' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/service-info' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/map' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/configuration' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/cohorts' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/datasets' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/runs' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/analyses' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/individuals?limit=10' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/biosamples?limit=10' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants?limit=10' | jq
+```
 
 
 ---
