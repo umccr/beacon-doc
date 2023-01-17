@@ -1,6 +1,28 @@
 # Beacon Compose Stack
 
-Java Beacon [compose stack](https://github.com/umccr/beacon-doc/tree/main/beacon) setup for POC demo instance.
+Terraform-based VM instance provisioning on AWS for hosting Java Beacon [docker compose stack](../beacon).
+
+## Prerequisite
+
+### Skills
+
+- AWS
+- Terraform
+
+### Route53 Public Hosted Zone
+
+- Create Route53 public hosted zone for `base_domain`
+- See https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html for how to
+- This task requires ability to modify your root domain DNS setting
+
+### ACM SSL Certificate
+
+- Create ACM SSL certificate for `base_domain` and `app_domain`
+  - Most part, this can be just one SSL certificate request such that 
+    - base domain: `demo.umccr.org`
+    - alternate name: `*.demo.umccr.org`
+- See https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html for how to
+
 
 ## TL;DR
 
@@ -60,7 +82,7 @@ docker info | grep Root
  Docker Root Dir: /data/docker
 ```
 
-- Now, you are ready to setup Java Beacon under `/data` location. Follow steps in [beacon/README.md](../beacon).
+- Now, you are ready to setup Java Beacon under `/data` location. Follow steps in [beacon/README.md](../beacon). Example as follows.
 
 ```
 cd /data
@@ -84,22 +106,6 @@ curl -s http://localhost:8080/beacon/v2.0.0/service-info | jq
 ```
 
 - Next. Ingest your choice of test cohort dataset from pre-built [scratch](../beacon/scratch) directory. :) 
-
-## Prerequisite
-
-### Route53 Public Hosted Zone
-
-- Create Route53 public hosted zone for `base_domain`
-- See https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html for how to
-- This task requires ability to modify your root domain DNS setting
-
-### ACM SSL Certificate
-
-- Create ACM SSL certificate for `base_domain` and `app_domain`
-  - Most part, this can be just one SSL certificate request such that 
-    - base domain: `demo.umccr.org`
-    - alternate name: `*.demo.umccr.org`
-- See https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html for how to
 
 
 ## Configuration
@@ -125,6 +131,6 @@ terraform init -migrate-state
 
 ### Scaling
 
-(Optional) You may vertically scale up the VM. More MEM is the better. Try `t3.xlarge`, `m6i.xlarge`, `m6a.xlarge` or; for more punch, try `r6in.xlarge` or `r6a.xlarge`.
+(Optional) You may vertically scale up the VM. The more MEM is the better. Try `t3.xlarge`, `m6i.xlarge`, `m6a.xlarge` or; for more punch, try `r6in.xlarge` or `r6a.xlarge`.
 
 If data disk is running low, follow https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html to extend it.

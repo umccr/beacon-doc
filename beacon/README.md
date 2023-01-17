@@ -7,6 +7,16 @@ This section contains investigation of [_Open source Java implementation of the 
 
 If that does not work for you then continue with the following for our fork and setup arrangement.
 
+## Prerequisite
+
+### Skills
+
+- Docker
+- Linux
+- DevOps
+- Java _(Optional: if you would like to tinker around source code and build)_
+- MongoDB _(Optional: if you would like to tinker around data prep and data ingestion)_
+
 ## Implementation
 
 ### Fork
@@ -32,7 +42,8 @@ At the mo, we maintain our fork of BSC/INB Java Beacon implementation at the fol
 
 ## Setup
 
-- You can grab either `j8` or `umccr` WAR file from release page to deploy it into JBoss WildFly application server. Use `WildFly-26.1.2.Final` (_not Preview_) with `JDK 11`.
+- You can grab either `j8` or `umccr` WAR file from release page to deploy it into JBoss WildFly application server.
+- Use `WildFly-26.1.2.Final` (_not Preview_) with `JDK 11`.
 - We have also provided `docker-compose.yml` stack as starter in this repo. As follows.
 
 ### Checkout
@@ -102,6 +113,25 @@ curl -s 'http://localhost:8080/beacon/v2.0.0/g_variants?limit=10' | jq
 The [scratch](scratch) directory contain some test cohort dataset that has already built for ingesting into MongoDB backend.
 
 Please follow README instruction guided there.
+
+## Networking
+
+Please note that we bring up docker compose stack regardless of where it gets provisioned on i.e. it could be on your localhost laptop or a VM instance or bare-metal server. You are advised to front this docker compose stack with reverse proxy server such as [HAProxy](http://www.haproxy.org), [Nginx](https://nginx.org/en/) or any HTTP load balancer or ingress controller that suit for your infrastructure situation. You should have the following topology as a rough guideline.
+
+```
+                    (terminate SSL here)
+                             |
+(internet)   --->   reverse-proxy:80/443   --->   VM Firewall   --->   VM:8080
+                                                       |
+                                        (allow only from reverse-proxy)
+```
+
+> 🛑 It is not recommended to expose WildFly application server ports or MongoDB server ports directly on VM to the world! These docker compose stack services should be maintained behind Firewall or Cloud SecurityGroup at all time.
+
+As an example and; if you are on AWS, you can consider such setup done in [compose_stack/README.md](../compose_stack). Please see that setup as reference. 
+
+Alternatively, you can override docker compose to allow WildFly/MongoDB services only within docker internal network; then run along and expose your reverse proxy 80/443 to VM node.
+
 
 ## Scaling
 

@@ -11,6 +11,10 @@ Enhancing Australia's capability for secure and responsible sharing of human gen
 
 - https://www.biocommons.org.au/hgpp
 
+Virtual Cohort Assembly Discovery Phase Report: National Community Needs & Candidate Solutions
+
+- https://doi.org/10.5281/zenodo.7439886
+
 
 ## Implementations
 
@@ -22,13 +26,13 @@ Enhancing Australia's capability for secure and responsible sharing of human gen
 
 - See [beacon/README.md](beacon)
 
-## Demo
+## Demo instance
 
 Our Java Beacon demo instance is available at https://faro.demo.umccr.org/beacon/
 
 _Please note that this is for testing only. We may change the service without notice._
 
-### Example Query
+## Example queries
 
 ```
 curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/info' | jq
