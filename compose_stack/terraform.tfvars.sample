@@ -6,3 +6,4 @@ app_domain = "beacon.umccr.org"
 instance_type = "t3.large"
 root_disk_size = 10
 data_disk_size = 150
+hibernation = false

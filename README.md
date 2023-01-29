@@ -18,6 +18,8 @@ Virtual Cohort Assembly Discovery Phase Report: National Community Needs & Candi
 
 ## Implementations
 
+We are investigating 2 Beacon v2 implementations as follows.
+
 ### Serverless Beacon
 
 - See https://github.com/umccr/sbeacon-exploration

@@ -1,6 +1,8 @@
 # Beacon Compose Stack
 
-Terraform-based VM instance provisioning on AWS for hosting Java Beacon [docker compose stack](../beacon).
+_(aka jBeacon)_
+
+Terraform-based VM instance provisioning on AWS for hosting Java Beacon [docker compose stack](../beacon) _(also known as jBeacon stack)_.
 
 ## Prerequisite
 
@@ -49,7 +51,7 @@ terraform apply
 ```
 aws ssm start-session --target i-1234561117085dce1
 sudo su - root
-lsblk | grep 300G
+lsblk
 ll /dev/nvme1n1
 mkfs -t xfs /dev/nvme1n1
 blkid | grep nvme1n1

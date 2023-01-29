@@ -31,12 +31,12 @@ module "beacon_compose_instance" {
   name                        = "JavaBeaconInstance"
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = var.instance_type
-  hibernation                 = true
+  hibernation                 = var.hibernation
   associate_public_ip_address = true
   create_iam_instance_profile = true
   iam_role_description        = "IAM Role for Java Beacon EC2 Instance"
   iam_role_policies           = {
-    AdministratorAccess = "arn:aws:iam::aws:policy/AdministratorAccess"
+    AdministratorAccess = "arn:aws:iam::aws:policy/AdministratorAccess"  # FIXME this may be too high for PROD env
   }
 
   vpc_security_group_ids = [aws_security_group.beacon_compose_instance_sg.id]

@@ -23,8 +23,8 @@ provider "aws" {
 }
 
 locals {
-  stack_name_dash = "beacon-compose"
-  stack_name_us   = "beacon_compose"
+  stack_name_dash = "jBeacon"
+  stack_name_us   = "jBeacon"
 }
 
 data "aws_route53_zone" "selected" {
@@ -52,7 +52,8 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+    # pinned AMI
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20230112"]
   }
 
   filter {

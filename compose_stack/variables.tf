@@ -11,7 +11,7 @@ variable "app_domain" {
 }
 
 variable "instance_type" {
-  default = "t3.large"  # 2 vCPU, 8GB MEM
+  default = "r6i.large"  # 2 vCPU, 16GB MEM
 }
 
 variable "root_disk_size" {
@@ -19,5 +19,9 @@ variable "root_disk_size" {
 }
 
 variable "data_disk_size" {
-  default = 300  # in GB
+  default = 500  # in GB
+}
+
+variable "hibernation" {
+  default = false
 }
