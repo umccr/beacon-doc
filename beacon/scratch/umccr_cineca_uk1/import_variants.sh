@@ -1,0 +1,31 @@
+#! /bin/bash
+
+date
+
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.22.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr22.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.21.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr21.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.20.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr20.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.19.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr19.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.18.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr18.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.17.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr17.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.16.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr16.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.15.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr15.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.14.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr14.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.13.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr13.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.12.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr12.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.11.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr11.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.10.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr10.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.9.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr9.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.8.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr8.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.7.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr7.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.6.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr6.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.5.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr5.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.4.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr4.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.3.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr3.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.2.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr2.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.1.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chr1.log
+( time mongoimport --uri="mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --collection=Variants --type=json --jsonArray --file <(gzip -d -c -k -q ./split/Test.1000G.phase3.joint.lifted.X.norm.ann.dbnsfp.clinvar.cosmic.json.gz) ) 2>&1 | tee import_chrX.log
+
+date
+
+echo Done.

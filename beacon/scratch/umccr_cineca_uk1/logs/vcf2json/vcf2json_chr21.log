@@ -1,0 +1,72 @@
+root@0b90bab6608b:/workdir/split# /usr/share/beacon-ri/beacon2-ri-tools/beacon vcf -i Test.1000G.phase3.joint.lifted.21.vcf.gz -p param.in
+Info:
+Info: Beacon 2.0.0
+Info: Beacon exe: /usr/share/beacon-ri/beacon2-ri-tools/beacon
+Info: (C) 2021-2022 Manuel Rueda, PhD
+Info: GNU General Public License v3
+Info:
+Info: ARGUMENTS USED:
+Info: mode: vcf
+Info: --i Test.1000G.phase3.joint.lifted.21.vcf.gz
+Info: --p param.in
+Info:
+Info: CONFIGURATION VALUES:
+Info: bash4bff          =>  /usr/share/beacon-ri/beacon2-ri-tools/BEACON/bin/run_vcf2bff.sh
+Info: bash4html         =>  /usr/share/beacon-ri/beacon2-ri-tools/BEACON/bin/run_bff2html.sh
+Info: bash4mongodb      =>  /usr/share/beacon-ri/beacon2-ri-tools/BEACON/bin/run_bff2mongodb.sh
+Info: bcftools          =>  /usr/share/beacon-ri/pro/NGSutils/bcftools-1.15.1/bcftools
+Info: bff2json          =>  /usr/share/beacon-ri/beacon2-ri-tools/BEACON/bin/bff2json.pl
+Info: browserdir        =>  /usr/share/beacon-ri/beacon2-ri-tools/browser
+Info: dbnsfpset         =>  all
+Info: hg19clinvar       =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg19/clinvar_20211218.vcf.gz
+Info: hg19cosmic        =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg19/CosmicCodingMuts.normal.hg19.vcf.gz
+Info: hg19dbnsfp        =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg19/dbNSFP4.1a_hg19.txt.gz
+Info: hg19fasta         =>  /usr/share/beacon-ri/databases/genomes/ucsc.hg19.fasta.gz
+Info: hg38clinvar       =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg38/clinvar_20211218.vcf.gz
+Info: hg38cosmic        =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg38/CosmicCodingMuts.normal.hg38.vcf.gz
+Info: hg38dbnsfp        =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg38/dbNSFP4.1a_hg38.txt.gz
+Info: hg38fasta         =>  /usr/share/beacon-ri/databases/genomes/hg38.fa.gz
+Info: hs37clinvar       =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg19/clinvar_20211218.vcf.gz
+Info: hs37cosmic        =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg19/CosmicCodingMuts.normal.hg19.vcf.gz
+Info: hs37dbnsfp        =>  /usr/share/beacon-ri/databases/snpeff/v5.0/hg19/dbNSFP4.1a_hg19.txt.gz
+Info: hs37fasta         =>  /usr/share/beacon-ri/databases/genomes/hs37d5.fa.gz
+Info: json2html         =>  /usr/share/beacon-ri/beacon2-ri-tools/BEACON/bin/bff2html.pl
+Info: mem               =>  8G
+Info: mongodburi        =>  mongodb://root:example@127.0.0.1:27017/beacon?authSource=admin
+Info: mongoimport       =>  /usr/share/beacon-ri/pro/mongodb-database-tools-ubuntu2004-x86_64-100.5.1/bin/mongoimport
+Info: mongosh           =>  /usr/share/beacon-ri/pro/mongosh
+Info: mongostat         =>  /usr/share/beacon-ri/pro/mongodb-database-tools-ubuntu2004-x86_64-100.5.1/bin/mongostat
+Info: paneldir          =>  /usr/share/beacon-ri/beacon2-ri-tools/browser/data
+Info: snpeff            =>  /usr/bin/java -Xmx8G -jar /usr/share/beacon-ri/pro/snpEff/snpEff.jar
+Info: snpsift           =>  /usr/bin/java -Xmx8G -jar /usr/share/beacon-ri/pro/snpEff/SnpSift.jar
+Info: tmpdir            =>  /tmp
+Info: vcf2bff           =>  /usr/share/beacon-ri/beacon2-ri-tools/BEACON/bin/vcf2bff.pl
+Info:
+Info: BEACON PARAMETERS:
+Info: bff               =>  See beacon_167452209400277/log.json
+Info: bff2html          =>  0
+Info: center            =>  CRG
+Info: datasetid         =>  default_beacon_1
+Info: date              =>  Tue Jan 24 01:01:34 2023
+Info: ega               =>  See beacon_167452209400277/log.json
+Info: genome            =>  hg38
+Info: gvvcfjson         =>  beacon_167452209400277/vcf/genomicVariationsVcf.json.gz
+Info: hostname          =>  0b90bab6608b
+Info: jobid             =>  167452209400277
+Info: log               =>  beacon_167452209400277/log.json
+Info: ncpuhost          =>  2
+Info: ncpuless          =>  1
+Info: organism          =>  Homo Sapiens
+Info: pipeline          =>  See beacon_167452209400277/log.json
+Info: projectdir        =>  beacon_167452209400277
+Info: technology        =>  Illumina HiSeq 2000
+Info: user              =>  root
+Info: zip               =>  /bin/gzip
+Info:
+Info: STARTING BEACON FUN
+Info: ********************************
+Info: Running the pipeline VCF2BFF...
+Info: ********************************
+Info: BEACON FINISHED OK
+Info: Ni Sa Moce
+root@0b90bab6608b:/workdir/split#

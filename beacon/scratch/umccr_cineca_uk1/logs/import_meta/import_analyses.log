@@ -1,0 +1,6 @@
+2023-02-14T04:19:57.250+0000	connected to: mongodb://[**REDACTED**]@localhost:27017/beacon2?authSource=admin
+2023-02-14T04:19:57.310+0000	2504 document(s) imported successfully. 0 document(s) failed to import.
+
+real	0m0.078s
+user	0m0.061s
+sys	0m0.012s
