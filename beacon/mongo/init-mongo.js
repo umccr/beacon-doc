@@ -6,6 +6,14 @@ db.createUser(
       {
         role: "readWrite",
         db: "beacon"
+      },
+      {
+        role: "readWrite",
+        db: "beacon2"
+      },
+      {
+        role: "readWrite",
+        db: "beacon3"
       }
     ]
   }

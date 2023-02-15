@@ -3,6 +3,9 @@ version: '3'
 services:
 
   mongodb:
+    command: ["mongod", "--config", "/etc/mongo/mongod.conf"]
+    volumes:
+      - ./mongo/conf:/etc/mongo
     environment:
       - MONGO_INITDB_DATABASE=admin
       - MONGO_INITDB_ROOT_USERNAME=admin
@@ -10,4 +13,4 @@ services:
 
   wildfly:
     environment:
-      - mongodb.url=mongodb://beacon:beacon@mongodb:27017/beacon?authSource=admin
+      - mongodb.url=mongodb://beacon:beacon@mongodb:27017/beacon2?authSource=admin

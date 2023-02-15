@@ -1,0 +1,439 @@
+Wed Feb 15 00:43:35 UTC 2023
+--------------------------------
+Current Mongosh Log ID:	63ec2ab8fec19fecc74798ee
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+id
+
+real	0m1.964s
+user	0m0.887s
+sys	0m0.120s
+--------------------------------
+Current Mongosh Log ID:	63ec2aba9887d791482e0715
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+id
+
+real	0m1.469s
+user	0m0.854s
+sys	0m0.127s
+--------------------------------
+Current Mongosh Log ID:	63ec2abb20d1ce1f12a68626
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+id
+
+real	0m1.474s
+user	0m0.900s
+sys	0m0.079s
+--------------------------------
+Current Mongosh Log ID:	63ec2abdbccdc326b0150114
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+id
+
+real	0m1.475s
+user	0m0.856s
+sys	0m0.137s
+--------------------------------
+Current Mongosh Log ID:	63ec2abe65b731cfd7bfd24e
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+id
+
+real	0m1.482s
+user	0m0.885s
+sys	0m0.101s
+--------------------------------
+Current Mongosh Log ID:	63ec2ac0b0459a8af8ad6b2e
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+MongoServerError: Index build failed: f26066cf-a702-45b0-9eba-c83acd02f14b: Collection beacon2.Runs ( d9b0b335-1762-497c-bd3a-395cbf436d63 ) :: caused by :: E11000 duplicate key error collection: beacon2.Runs index: id dup key: { id: "SRR10903401" }
+
+real	0m0.908s
+user	0m0.871s
+sys	0m0.094s
+--------------------------------
+Current Mongosh Log ID:	63ec2ac0c0c0eafcbe59b34c
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+MongoServerError: Index build failed: 5b6a051f-78ce-449c-b504-8226c4ca3156: Collection beacon2.Variants ( 778cbb63-58bb-47d0-9c01-ac67fed73b14 ) :: caused by :: E11000 duplicate key error collection: beacon2.Variants index: id dup key: { id: null }
+
+real	37m22.688s
+user	0m1.385s
+sys	0m0.108s
+--------------------------------
+Current Mongosh Log ID:	63ec338309da4ed3665d8c73
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+variantInternalId
+
+real	34m11.022s
+user	0m1.499s
+sys	0m0.123s
+--------------------------------
+Current Mongosh Log ID:	63ec3b865fe1d4873fa1b862
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+referenceName
+
+real	34m4.387s
+user	0m1.417s
+sys	0m0.096s
+--------------------------------
+Current Mongosh Log ID:	63ec438331891c2552641a90
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+assemblyId
+
+real	34m8.795s
+user	0m1.372s
+sys	0m0.127s
+--------------------------------
+Current Mongosh Log ID:	63ec4b846b1d7b6578c78db6
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+geneId
+
+real	33m52.212s
+user	0m1.348s
+sys	0m0.143s
+--------------------------------
+Current Mongosh Log ID:	63ec5374604bffbdbac7b63d
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+aaChanges
+
+real	34m49.306s
+user	0m1.387s
+sys	0m0.110s
+--------------------------------
+Current Mongosh Log ID:	63ec5b9d0ed82d02cf4f8c29
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+analysisId
+
+real	58m59.454s
+user	0m1.601s
+sys	0m0.155s
+--------------------------------
+Current Mongosh Log ID:	63ec6971197d71184360dcba
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2023-02-14T04:36:05.988+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+MongoNetworkError: connection 2 to 127.0.0.1:27017 closed
+
+real	177m11.309s
+user	0m2.366s
+sys	0m0.364s
+--------------------------------
+Current Mongosh Log ID:	63ec92f8f360429a7c2217ce
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+
+real	0m0.919s
+user	0m0.602s
+sys	0m0.119s
+--------------------------------
+Current Mongosh Log ID:	63ec92f9a8933180f93150d8
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+
+real	0m0.595s
+user	0m0.573s
+sys	0m0.081s
+--------------------------------
+Wed Feb 15 08:08:25 UTC 2023
