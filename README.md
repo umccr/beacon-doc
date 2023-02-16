@@ -50,6 +50,70 @@ curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/biosamples?limit=10' | jq
 curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants?limit=10' | jq
 ```
 
+## Scenarios
+
+- Give me some 10 counts of Chromosome 22 G>A SNP
+```
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants?variantType=SNP&referenceName=22&referenceBases=G&alternateBases=A&limit=10' | jq > out.json
+```
+
+- Does this SNP exist and are there at least 10 count?
+
+```
+jq -c '.responseSummary' out.json
+{"exists":true,"numTotalResults":10}
+```
+
+- Let grab the first variant record "variantInternalId"
+
+```
+jq -c '.response.resultSets[0].results[0].variantInternalId' out.json
+"chrchr22_10584988_G_A"
+```
+
+- Let check details for this variant
+
+```
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants/chrchr22_10584988_G_A' | jq
+```
+
+- Give me all BioSamples of this variant record
+
+```
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants/chrchr22_10584988_G_A/biosamples' | jq
+```
+
+## Known Issues
+
+### Need back filling caseLevelData
+
+At the moment, the following associated entities fetching query does not work.
+
+```
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants/chrchr22_10584988_G_A/individuals' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants/chrchr22_10584988_G_A/analyses' | jq
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants/chrchr22_10584988_G_A/runs' | jq
+```
+
+This is due to the fact that it missed `caseLevelData` of related meta info for the variant; except `biosampleId` that has transformed from VCF sample ID; during VCF2JSON data processing step.
+
+```
+    "caseLevelData": [
+      {
+        "individualId": null,
+        "biosampleId": "HG00128",
+        "analysisId": null,
+        "zigosity": null,
+        "alleleOrigin": null,
+        "clinicalInterpretations": null,
+        "phenotypicEffects": null
+      },
+      ...
+```
+
+If we attempt to back-fill this data lineage, we will have to go through all variants [~85mil](beacon/scratch/umccr_cineca_uk1). Computation cost is -- `per variant * number of caseLevelData points`.
+
+This highlight the importance of data processing step in this approach. Alternatively, we could solve it at the application implementation end. At the moment, we would not further pursuit for either solution. But noted as known issue. 
 
 ---
 

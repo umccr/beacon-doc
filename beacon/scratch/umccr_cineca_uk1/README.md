@@ -111,9 +111,10 @@ docker cp beacon-nosql-server-2.0.0-umccr-beta.2.war wildfly:/opt/jboss/wildfly/
 
 Observed timing of data transforming, importing and indexing can be scraped from the following logs.
 
+- [logs/vcf2json/](logs/vcf2json)
 - [logs/import_variants/](logs/import_variants)
 - [logs/import_meta/](logs/import_meta)
-- [logs/vcf2json/](logs/vcf2json)
+- [logs/indexing/](logs/indexing)
 
 ### Checksum
 
@@ -193,36 +194,35 @@ root@ip-172-31-21-157:/data/workdir# ls -lrS split/ | grep .json.gz$
 
 ```
 root@ip-172-31-21-157:/data/workdir# du -sh /data/beacon-doc/beacon/mongo/
-200G	/data/beacon-doc/beacon/mongo/
+262G	/data/beacon-doc/beacon/mongo/
 ```
-
-> !!! TODO !!! NOTE: the following db.stats() is without fully indexes yet, I will update this again once ready ~victor
 
 ```
 test> show databases
-admin    116.00 KiB
+admin    148.00 KiB
 beacon     3.25 GiB
-beacon2  196.00 GiB
-config    84.00 KiB
+beacon2  257.30 GiB
+config    72.00 KiB
 local     72.00 KiB
+
 test> use beacon2
 switched to db beacon2
+
 beacon2> db.stats()
 {
   db: 'beacon2',
   collections: 7,
   views: 0,
   objects: 85104889,
-  avgObjSize: 13281.14789753148,
-  dataSize: 1130290617612,
-  storageSize: 209381560320,
-  indexes: 7,
-  indexSize: 1076318208,
-  totalSize: 210457878528,
+  avgObjSize: 13281.147998806508,
+  dataSize: 1130290626231,
+  storageSize: 209381543936,
+  indexes: 21,
+  indexSize: 66895958016,
+  totalSize: 276277501952,
   scaleFactor: 1,
-  fsUsedSize: 450565246976,
+  fsUsedSize: 379617169408,
   fsTotalSize: 536608768000,
   ok: 1
 }
-beacon2>
 ```
