@@ -33,6 +33,12 @@ echo "--------------------------------" >> index.log
 ( time mongosh "mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --eval "db.Variants.createIndex({'_position.assemblyId': 1}, {name: 'assemblyId', background: true})" )                       2>&1 | tee -a index.log
 echo "--------------------------------" >> index.log
 
+( time mongosh "mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --eval "db.Variants.createIndex({'_position.start': 1}, {name: 'start', background: true})" )                                 2>&1 | tee -a index.log
+echo "--------------------------------" >> index.log
+
+( time mongosh "mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --eval "db.Variants.createIndex({'_position.end': 1}, {name: 'end', background: true})" )                                     2>&1 | tee -a index.log
+echo "--------------------------------" >> index.log
+
 ( time mongosh "mongodb://admin:admin@localhost:27017/beacon2?authSource=admin" --eval "db.Variants.createIndex({'molecularAtrributes.geneIds': 1}, {name: 'geneId', background: true})" )                    2>&1 | tee -a index.log
 echo "--------------------------------" >> index.log
 

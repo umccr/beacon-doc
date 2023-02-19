@@ -52,6 +52,18 @@ curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants?limit=10' | jq
 
 ## Scenarios
 
+- Give me some 10 counts of G>C at POS between start 150000, end 150100
+```
+curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants?start=150000&end=150100&referenceBases=G&alternateBases=C&limit=10' | jq > out_pos.json
+```
+
+- How many found?
+
+```
+jq -c '.responseSummary' out_pos.json
+{"exists":true,"numTotalResults":2}
+```
+
 - Give me some 10 counts of Chromosome 22 G>A SNP
 ```
 curl -s 'https://faro.demo.umccr.org/beacon/v2.0.0/g_variants?variantType=SNP&referenceName=22&referenceBases=G&alternateBases=A&limit=10' | jq > out.json

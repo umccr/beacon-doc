@@ -1,0 +1,29 @@
+Sun Feb 19 00:47:04 UTC 2023
+--------------------------------
+Current Mongosh Log ID:	63f17189d311f5d7dee6fe51
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+start
+
+real	34m3.254s
+user	0m1.369s
+sys	0m0.184s
+--------------------------------
+Current Mongosh Log ID:	63f17984da1a3377a6436419
+Connecting to:		mongodb://<credentials>@localhost:27017/beacon2?authSource=admin&directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.2
+Using MongoDB:		6.0.3
+Using Mongosh:		1.6.2
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+end
+
+real	34m0.961s
+user	0m1.349s
+sys	0m0.157s
+--------------------------------
+Sun Feb 19 01:55:08 UTC 2023
