@@ -31,6 +31,8 @@ This is done as follows.
 - _NOTE: We will use database name `beacon2`_
 - Use [import_variants.sh](import_variants.sh) for importing Variants JSONs into MongoDB
 - Use [import_meta.sh](import_meta.sh) for importing Metadata JSONs into MongoDB
+- Use [export_variants.sh](export_variants.sh) for exporting some first 1000 records from Variants collection
+- Use [import_variants_small.sh](import_variants_small.sh) for importing exported Variants (first 1000 documents) for local development and/or quick demo purpose
 
 ![mongoimport_gzip.png](mongoimport_gzip.png)
 
