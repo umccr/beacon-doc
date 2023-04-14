@@ -30,9 +30,19 @@ We are investigating 2 Beacon v2 implementations as follows.
 
 ## Demo instance
 
-Our Java Beacon demo instance is available at https://faro.demo.umccr.org/beacon/
+> * As of 14-04-2023, our investigation on Java Beacon has concluded and, we have shutdown the following "faro" Java Beacon instance. 
+> * Hence, the following POC demo "faro" endpoint won't be reachable anymore. 
+> * If you are interested, you may spin one up your end by following instructions [beacon/README.md](beacon).
+> * For the record, we have used the following VM specification for the "faro" demo instance; see [compose_stack/README.md](compose_stack) for details.
+> * Meantime, we will be still continuing with our [sbeacon-exploration](https://github.com/umccr/sbeacon-exploration).
 
-_Please note that this is for testing only. We may change the service without notice._
+```
+Ec2 Instance Type: r6i.large  (2 vCPU, 16GB MEM)
+Root Disk: 20 GB
+Data Disk: 500 GB
+```
+
+Our Java Beacon demo instance is available at https://faro.demo.umccr.org/beacon/
 
 ## Example queries
 
